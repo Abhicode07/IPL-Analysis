@@ -1,4 +1,4 @@
-# 🏏 IPL Analysis Dashboard (2008–2022)  
+# 🏏 IPL Analysis Dashboard (2008–2025)  
 
 ## 📌 Project Overview  
 This project delivers a comprehensive **SQL-powered IPL Analysis Dashboard** that visualizes data from the **Indian Premier League (2008–2022)**.  
