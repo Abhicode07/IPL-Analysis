@@ -62,6 +62,9 @@ Captures match-level summary.
 
 ---
 
+<img width="1440" height="775" alt="image" src="https://github.com/user-attachments/assets/34116f0c-ae45-401c-ab0a-4272ccaa71d9" />
+
+
 ## 📈 Sample Insights  
 - **Mumbai Indians** crowned champions in 2017.  
 - **David Warner** dominated batting with 641 runs in 2017.  
