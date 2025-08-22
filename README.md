@@ -1,104 +1,86 @@
-🏏 IPL Analysis Dashboard
-📌 Project Overview
+# 🏏 IPL Analysis Dashboard (2008–2022)  
 
-This project provides an interactive Power BI dashboard for analyzing Indian Premier League (IPL) data from 2008 to 2022. The dashboard offers insights into players, teams, venues, and match outcomes.
+## 📌 Project Overview  
+This project delivers a comprehensive **SQL-powered IPL Analysis Dashboard** that visualizes data from the **Indian Premier League (2008–2022)**.  
+The dashboard uncovers trends around **players, teams, venues, and match results**, making it valuable for fans, analysts, and cricket strategists.  
 
-Using two datasets:
+The analysis leverages:  
+- **ipl_ball_by_ball_2008_2022.csv** → Ball-level details of every match.  
+- **ipl_matches_2008_2022.csv** → Match-level metadata and outcomes.  
 
-ipl_ball_by_ball_2008_2022.csv – Ball-by-ball match details.
+---
 
-ipl_matches_2008_2022.csv – Match-level details.
+## 📂 Datasets  
+### **1. Ball-by-Ball Data** (`ipl_ball_by_ball_2008_2022.csv`)  
+Contains granular details of each delivery.  
+- `id` → Match ID  
+- `inning` → Inning number  
+- `over`, `ball` → Delivery sequence  
+- `batsman`, `bowler` → Player names  
+- `total_runs` → Runs from each ball  
+- `is_wicket` → Dismissal indicator  
 
-The analysis helps cricket fans, analysts, and stakeholders explore player performance, match trends, and tournament stats with a user-friendly interface.
+### **2. Match Data** (`ipl_matches_2008_2022.csv`)  
+Captures match-level summary.  
+- `id` → Match ID  
+- `season` → IPL season year  
+- `city`, `venue` → Location of match  
+- `team1`, `team2` → Competing sides  
+- `toss_winner`, `toss_decision` → Toss details  
+- `winner` → Match winner  
+- `win_by_runs`, `win_by_wickets` → Victory margin  
+- `player_of_match` → Match MVP  
 
-📂 Dataset Description
-1. ipl_ball_by_ball_2008_2022.csv
+---
 
-Contains detailed ball-by-ball information.
-Key columns:
+## 📊 Dashboard Highlights  
 
-id → Match ID
+### 🏆 **Season Overview**  
+- IPL title winners per season.  
+- Orange Cap: Top run scorers.  
+- Purple Cap: Leading wicket takers.  
+- Season totals for 4s & 6s.  
 
-inning → Inning number
+### ⚡ **Player Insights**  
+- Batting analysis → Runs, strike rate, boundaries.  
+- Bowling analysis → Wickets, economy, averages.  
+- Player-level filtering options.  
 
-over → Over number
+### 🏟 **Match Breakdown**  
+- Team win distribution (by wickets, runs, super overs).  
+- Venue-based win statistics.  
+- Toss decision impact on outcomes.  
+- Head-to-head team performance.  
 
-ball → Ball number
+---
 
-batsman → Name of batsman
+## 🚀 Tools & Technologies  
+- **SQL** → Data querying & aggregation.  
+- **Power BI** → Interactive dashboards.  
+- **Python (Pandas)** → Optional data preprocessing.  
+- **Datasets** → IPL Kaggle dataset (2008–2022).  
 
-bowler → Name of bowler
+---
 
-total_runs → Runs scored on the ball
+## 📈 Sample Insights  
+- **Mumbai Indians** crowned champions in 2017.  
+- **David Warner** dominated batting with 641 runs in 2017.  
+- **Bhuvneshwar Kumar** topped bowling with 26 wickets in 2017.  
+- Chasing teams won the majority of games.  
+- Matches were more frequently decided by **wickets than runs**.  
 
-is_wicket → Whether a wicket fell
+---
 
-2. ipl_matches_2008_2022.csv
+## 📌 How to Use  
+1. Load the datasets into SQL / Power BI.  
+2. Run SQL queries for data aggregation.  
+3. Connect processed data to Power BI.  
+4. Explore dashboards with slicers and filters.  
 
-Contains match-level details.
-Key columns:
+---
 
-id → Match ID
+## 📝 Example SQL Queries  
 
-season → Year of IPL
+### 🔹 Top 5 Run Scorers in a Season
+```sql
 
-city → Venue city
-
-team1, team2 → Competing teams
-
-toss_winner, toss_decision → Toss details
-
-winner → Match winner
-
-win_by_runs, win_by_wickets → Result margin
-
-player_of_match → Best player
-
-📊 Dashboard Features
-🏆 Tournament Summary
-
-Title Winner (e.g., Mumbai Indians in 2017).
-
-Orange Cap (Most Runs – e.g., DA Warner with 641 runs).
-
-Purple Cap (Most Wickets – e.g., B Kumar with 26 wickets).
-
-Tournament 6’s and 4’s distribution.
-
-⚡ Player Analysis
-
-Batting Stats (Total Runs, 4s, 6s, Strike Rate).
-
-Bowling Stats (Wickets, Economy, Bowling Average).
-
-Dropdown filters for selecting specific batsman/bowler.
-
-🏟️ Match Insights
-
-Matches won by venue (Runs, Wickets, Super Over).
-
-Matches won by team (team-wise performance).
-
-Matches won based on toss decision (Bat/Field).
-
-Matches won by result type (Runs, Wickets, Super Over).
-
-🚀 Tools & Technologies Used
-
-Power BI → Dashboard development and visualization.
-
-Python / Pandas (optional preprocessing).
-
-Datasets → Kaggle IPL dataset (2008–2022).
-
-📈 Key Insights from the Dashboard
-
-Mumbai Indians were the title winners in 2017.
-
-DA Warner scored the most runs (641) in 2017.
-
-Bhuvneshwar Kumar took the most wickets (26) in 2017.
-
-Majority of matches were won by chasing (fielding first).
-
-Most matches were won by wickets rather than runs.
