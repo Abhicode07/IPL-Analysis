@@ -1,17 +1,17 @@
 # 🏏 IPL Analysis Dashboard (2008–2025)  
 
 ## 📌 Project Overview  
-This project delivers a comprehensive **SQL-powered IPL Analysis Dashboard** that visualizes data from the **Indian Premier League (2008–2022)**.  
+This project delivers a comprehensive **SQL-powered IPL Analysis Dashboard** that visualizes data from the **Indian Premier League (2008–2025)**.  
 The dashboard uncovers trends around **players, teams, venues, and match results**, making it valuable for fans, analysts, and cricket strategists.  
 
 The analysis leverages:  
-- **ipl_ball_by_ball_2008_2022.csv** → Ball-level details of every match.  
-- **ipl_matches_2008_2022.csv** → Match-level metadata and outcomes.  
+- **ipl_ball_by_ball_2008_2025.csv** → Ball-level details of every match.  
+- **ipl_matches_2008_2025.csv** → Match-level metadata and outcomes.  
 
 ---
 
 ## 📂 Datasets  
-### **1. Ball-by-Ball Data** (`ipl_ball_by_ball_2008_2022.csv`)  
+### **1. Ball-by-Ball Data** (`ipl_ball_by_ball_2008_2025.csv`)  
 Contains granular details of each delivery.  
 - `id` → Match ID  
 - `inning` → Inning number  
@@ -20,7 +20,7 @@ Contains granular details of each delivery.
 - `total_runs` → Runs from each ball  
 - `is_wicket` → Dismissal indicator  
 
-### **2. Match Data** (`ipl_matches_2008_2022.csv`)  
+### **2. Match Data** (`ipl_matches_2008_2025.csv`)  
 Captures match-level summary.  
 - `id` → Match ID  
 - `season` → IPL season year  
